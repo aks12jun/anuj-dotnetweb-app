@@ -4,4 +4,5 @@ RUN dnf install dotnet-sdk-8.0 -y
 COPY . /anujapp/
 WORKDIR /anujapp
 RUN dotnet build -o anujappbin
-CMD ./anujappbin/ashu-webapp --urls=http://0.0.0.0:5001
+RUN dotnet publish -o anuj_publish -p:AssemblyName=anujappbin
+CMD ./anuj_publish/anujappbin --urls=http://0.0.0.0:5001
