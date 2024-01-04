@@ -5,7 +5,7 @@ services: # apps containers you want to build and run
     build: .  # path of dockerfile location -- . means current
     container_name: anujcontainer1 # it will create container also
     ports:
-    - 17715:5002
+    - 17715:5001
   anujapp2: # creating httpd image and container
     image: rad-httpd:version1
     build:
