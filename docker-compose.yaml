@@ -7,7 +7,7 @@ services: # apps containers you want to build and run
     ports:
     - 17715:5001
   anujapp2: # creating httpd image and container
-    image: rad-httpd:version1
+    image: rad-httpd-image:version1
     build:
       context: .
       dockerfile: rad-httpd.dockerfile
